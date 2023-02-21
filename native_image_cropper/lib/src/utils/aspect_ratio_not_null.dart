@@ -58,7 +58,7 @@ abstract class CropUtilsAspectRatioNotNull extends CropUtils {
   }
 }
 
-extension on Offset {
+extension NotNullCrop on Offset {
   /// Indicates whether the absolute value of [dx] is greater than the
   /// absolute value of [dy].
   bool get isXAbsoluteGreaterThanY => dx.abs() > dy.abs();
